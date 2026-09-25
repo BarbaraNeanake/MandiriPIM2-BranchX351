@@ -6,6 +6,7 @@ import { useData } from '../state/DataContext'
 import { useAuth } from '../state/AuthGate'
 import mandiriLogo from '../asset/mandiri-logo.webp'
 import danantaraLogo from '../asset/LogoDanantara.png'
+import pimLogo from '../asset/logo-emblem.png'
 
 interface NavItem {
   to: string
@@ -61,11 +62,20 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   const { signOut } = useAuth()
   return (
     <nav className="flex h-full flex-col p-4">
-      <div className="mb-6 border-b border-white/10 px-2 pb-5 pt-1">
-        <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-gold-300">
-          Community Mapping
-        </p>
-        <p className="mt-1.5 text-[15px] font-semibold leading-snug text-white">{BRANCH.name}</p>
+      <div className="mb-6 flex items-center gap-3 border-b border-white/10 px-2 pb-5 pt-1">
+        <img
+          src={pimLogo}
+          alt="Mandiri PIM 2"
+          className="h-11 w-11 shrink-0 rounded-lg bg-white p-0.5"
+          width={128}
+          height={128}
+        />
+        <div className="min-w-0">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-gold-300">
+            Community Mapping
+          </p>
+          <p className="mt-1.5 text-[15px] font-semibold leading-snug text-white">{BRANCH.name}</p>
+        </div>
       </div>
 
       <p className="mb-2 px-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-navy-300">
