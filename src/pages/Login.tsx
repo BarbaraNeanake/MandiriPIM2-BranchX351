@@ -72,7 +72,7 @@ export default function Login({ onSubmit }: { onSubmit: (password: string) => Pr
           </div>
 
           <p className="mt-6 text-center text-[11px] leading-relaxed text-navy-300">
-            Tanpa data nasabah. Hanya informasi komunitas yang bersifat publik.
+            © 2026 KCP Pondok Indah Mall 2
           </p>
         </div>
       </main>
