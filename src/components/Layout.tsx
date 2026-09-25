@@ -66,7 +66,7 @@ function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
         <img
           src={pimLogo}
           alt="Mandiri PIM 2"
-          className="h-11 w-11 shrink-0 rounded-lg bg-white p-0.5"
+          className="h-12 w-12 shrink-0"
           width={128}
           height={128}
         />
